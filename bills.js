@@ -47,7 +47,7 @@ function payBills()
 			}
 			else
 			{
-				alert("Немате доволно сретсва")
+				alert("Немате доволно средства")
 				break
 			}
 		}

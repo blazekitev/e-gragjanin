@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Сметки</title>
+        <link rel="stylesheet" media="screen" type="text/css" href="style/home.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+            <img src="img/logo.png">
+            <ul>
+                <li><a href="home.html">Дома</a></li>
+                <li><a href="mvr.html">МВР</a></li>
+                <li><a href="ujp.html">УЈП</a></li>
+                <li class="active"><a href="#">Сметки</a></li>
+                <i class="fas fa-sign-out-alt" onclick="signOut()"></i>
+            </ul>
+            </div>
+        </header>
+        <div class="container">
+        <h2 class="not_payed_bills">Неплатени сметки</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Фактура број</td>
+                    <td>Адреса</td>
+                    <td>Месец</td>
+                    <td>Вкупен износ</td>
+                    <td>Тип</td>
+                </tr>
+            </thead>
+
+            <tbody id="bills_tbody">
+            </tbody>
+        </table>
+
+        <input class="button" type="submit" value="Плати сметки" onclick="payBills()">
+        </div>
+
+        <script src="../bills.js"></script>
+        <script src="../helper.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>УЈП</title>
+        <link rel="stylesheet" media="screen" type="text/css" href="style/home.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+            <img src="img/logo.png">
+            <ul>
+                <li><a href="home.html">Дома</a></li>
+                <li><a href="mvr.html">МВР</a></li>
+                <li class="active"><a href="#">УЈП</a></li>
+                <li><a href="smetki.html">Сметки</a></li>
+                <i class="fas fa-sign-out-alt" onclick="signOut()"></i>
+            </ul>
+            </div>
+        </header>
+
+         <div class="container">
+            <div class="data-wraper">
+                <div class="data-title">ГОДИШНА ДАНОЧНА ПРИЈАВА</div>
+                    <div class="data-body">
+                        <div class="">
+                            <h4 class="text-center">За успешна даночна пријава, внесете ги точно вашите податоци!</h4>
+                            <hr>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="div-center">
+                                <span>Локација:</span>
+                                <input type="text" placeholder="Изберете локација" path="location">
+                                <span>Место на аплицирање:</span>
+                                <input type="text" placeholder="Изберете место" path="settlement">
+                                <span>Внесете месечна бруто плата:</span>
+                                <input type="number" placeholder="Износ" path="salary">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="div-center">
+                                <span>ЕМБГ:</span>
+                                <input id="embg" type="text">
+                                <span>Име и Презиме:</span>
+                                <input id="fullname" type="text">
+                                <span>Телефон:</span>
+                                <input id="mobile" type="text">
+                                <span>E-mail:</span>
+                                <input id="mail" type="text">
+                                <input class="button" type="submit" value="Проследи барање" onclick="sendRequest()">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <script src="../helper.js"></script>
+        <script src="../ujp.js"></script>
+    </body>
+</html>
+

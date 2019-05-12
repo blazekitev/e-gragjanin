@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Дома</title>
+        <link rel="stylesheet" media="screen" type="text/css" href="style/home.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <img src="img/logo.png">
+                <ul>
+                    <li class="active"><a href="#">Дома</a></li>
+                    <li><a href="mvr.html">МВР</a></li>
+                    <li><a href="ujp.html">УЈП</a></li>
+                    <li><a href="smetki.html">Сметки</a></li>
+                    <i class="fas fa-sign-out-alt" onclick="signOut()"></i>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+        <h2 class="mvr-header">Министерство за внатрешни работи</h2>
+
+        <table id="mvr" class="mvr">
+            <thead>
+                <tr>
+                    <td>Тип</td>
+                    <td>Датум на закажување</td>
+                    <td>Датум на издавање</td>
+                    <td>Град</td>
+                    <td>Место на аплицирање</td>
+                </tr>
+            </thead>
+
+            <tbody id="mvr_body">
+            </tbody>
+        </table>
+
+        <h2>Платени сметки</h2>
+
+        <table id="bills" class="bills">
+            <thead>
+                <tr>
+                    <td>Фактура број</td>
+                    <td>Адреса</td>
+                    <td>Месец</td>
+                    <td>Тип</td>
+                    <td>Вкупен износ</td>
+                    <td>Дата на плаќање</td>
+                </tr>
+            </thead>
+
+            <tbody id="bills_tbody">
+            </tbody>
+        </table>
+
+        <h2>Управа за јавни приходи</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Град</td>
+                    <td>Место на аплицирање</td>
+                    <td>Месечна плата</td>
+                    <td>Годишна плата</td>
+                    <td>Годишен данок</td>
+                    <td>Дата на поднесување</td>
+                </tr>
+            </thead>
+
+            <tbody id="ujp">
+            </tbody>
+        </table>
+    </div>
+        <script src="../home.js"></script>
+        <script src="../helper.js"></script>
+    </body>
+</html>

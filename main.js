@@ -144,7 +144,7 @@ function setmeToLocalStorage()
             card:
             {
                 number: 4347568236592384,
-                money: 5000
+                money: 4000
             },
             ujp:
             [
